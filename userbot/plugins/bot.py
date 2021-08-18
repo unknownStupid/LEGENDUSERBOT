@@ -22,7 +22,7 @@ aura = bot.uid
 mention = f"[{DEFAULTUSER}](tg://user?id={aura})"
 
 
-PM_IMG = "https://telegra.ph/file/baf1bde222c614d6040e9.jpg"
+PM_IMG = "https://telegra.ph/file/71339ef5c1b34cffa6cb5.jpg"
 pm_caption ="**ℓєgєи∂ϐοτ Is οиℓιиє**\n\n"
 
 pm_caption += f"**┏━━━━━━━━━━━━━┓**\n"
