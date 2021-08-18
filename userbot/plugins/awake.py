@@ -1,7 +1,4 @@
 
-"""Check if userbot awake or not . 
-
-"""
 import os
 import asyncio
 from telethon import events
@@ -21,7 +18,7 @@ import io
 from platform import python_version, uname
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
 
-PM_IMG = "https://telegra.ph/file/9579285e28a6031374b62.jpg"
+PM_IMG = "https://telegra.ph/file/8249d3fa8b6c38971dfd6.jpg"
 pm_caption ="**🔱LegendBøt IS Awake🔱**\n\n"
 pm_caption += f"**🇮🇳 Telethon : TELETHON-1.19.0**\n"
 pm_caption += f"**🇮🇳 Python : PYTHON-3.8.5**\n"
