@@ -13,11 +13,11 @@ from userbot import HEROKU_APP, bot
 async def _(event):
     if event.fwd_from:
         return
-    await event.edit("Restarting **[ ░░░ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
-    await event.edit("Restarting **[ █░░ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
-    await event.edit("Restarting **[ ██░ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
-    await event.edit("Restarting **[ ███ ]** ...\nType `.ping` or `.help` to check if I am working 🙂")
-    await event.edit("Restarted 𝕷𝐞̂𝐠𝐞́𝐧̃𝐝𝕭ø𝖙 ν2.ο**[ ✓ ]** ...\nType `.ping` or `.legend` after 10min to check if I am working 🙂")
+    await event.edit("яєϐοοτιиg **[ ░░░ ]** ...\nωαιτ ƒєω мιиυτє⚠️")
+    await event.edit("яєϐοοτιиg **[ █░░ ]** ...\nωαιτ ƒєω мιиυτє☣️")
+    await event.edit("яєϐοοτιиg **[ ██░ ]** ...\nωαιτ ƒєω мιиυτє☢️")
+    await event.edit("яєϐοοτιиg **[ ███ ]** ...\nωαιτ ƒєω мιиυτєѕ☢️")
+    await event.edit("Rєϐοοτє∂ 𝕷𝐞̂𝐠𝐞́𝐧̃𝐝𝕭ø𝖙 V2.ο**[ ✔️ ]** ...\nType `.ping` or `.legend` after 5min to check if I am working✔️")
     await bot.disconnect()
     os.execl(sys.executable, sys.executable, *sys.argv)
     quit()
@@ -26,7 +26,7 @@ async def _(event):
 async def _(event):
     if event.fwd_from:
         return
-    await event.edit("**[ ! ]** `Turning off bot now ... Manually turn me on later or follow step of update in @Legend_Userbot` ಠ_ಠ")
+    await event.edit("**[ ! ]** `⚰️Turning off bot now ... Manually turn me on later or follow step of update in @Legend_Userbot` ಠ_ಠ")
     if HEROKU_APP is not None:
         HEROKU_APP.process_formation()["userbot"].scale(0)
     else:
