@@ -1,11 +1,4 @@
-# Created By starkdy And Ported For Type 2 Userbot By StarkxD
-# modified and added more tweets by @David99q for Hellbot.....
-# added sudo support by @David99q
-# family completed.....
-# mia, johhny, sunny, dani
-# modi, rahul, trump, gandhiji
-# no offence. Made for fun purpose only
-# Now in LEGENDBOT
+
 
 from userbot import CMD_HELP
 from userbot.helpers.functions import (
@@ -380,7 +373,7 @@ async def nekobot(borg):
     await borg.delete()
 
 
-CmdHelp("tweet").add_command(
+CmdHelp("τωєєτ").add_command(
   "kanna", "<text>/<reply to text>", "Kanna writes for you"
 ).add_command(
   "cmm", "<text>/<reply>", "Get a banner of Change My Mind"
