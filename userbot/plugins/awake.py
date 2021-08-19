@@ -60,7 +60,7 @@ uptime = get_readable_time((time.time() - StartTime))
 async def amireallyalive(event):
     if event.fwd_from:
         return
-    reply_to_id = await reply_id(alive)
+    reply_to_id = await reply_id(event)
 
     if  LEGEND_IMG:
         LEGEND_caption = f"**{mention}**\n"
