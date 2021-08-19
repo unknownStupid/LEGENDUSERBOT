@@ -60,7 +60,6 @@ heroku3
 httplib2
 humanize
 justwatch
-json
 langdetect
 lxml
 lottie
