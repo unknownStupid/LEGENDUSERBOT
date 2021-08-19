@@ -230,8 +230,8 @@ async def sprinkle(event):
     )
     
 
-@bot.on(admin_cmd(pattern=r"f", outgoing=True))
-@bot.on(sudo_cmd(pattern=r"f", allow_sudo=True))
+@bot.on(admin_cmd(pattern=r"fstyle", outgoing=True))
+@bot.on(sudo_cmd(pattern=r"fstyle", allow_sudo=True))
 async def payf(event):
     if event.fwd_from:
         return
@@ -289,7 +289,7 @@ CmdHelp("αɳเɱαƭเσɳร4").add_command(
 ).add_command(
   "tp", None, "Use and see"
 ).add_command(
-  "f", "<text>", "Prints the given text in 'F' format"
+  "fstyle", "<text>", "Prints the given text in 'F' format"
 ).add_command(
   "wahack", None, "Whatsapp Hack animation"
 ).add()
