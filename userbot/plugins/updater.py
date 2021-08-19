@@ -136,7 +136,7 @@ def generate_change_log(git_repo, diff_marker):
 async def deploy_start(tgbot, message, refspec, remote):
     await message.edit(RESTARTING_APP)
     await message.edit(
-        "𝕷єgєи∂ϐοτ ιѕ οи υρ∂ατιиg to ℓατєѕτ v2.o!!!\nαƒτєя 10 мιи τγρє `.ping` οя `.alive` το ϲнєϲκ ιƒ ι αм οи ѕιя 😎"
+        "𝕷єgєи∂ϐοτ ιѕ οи υρ∂ατιиg to ℓατєѕτ v2.o!!!\nαƒτєя 10 мιи τγρє `.legend` οя `.alive` το ϲнєϲκ ιƒ ι αм οи ѕιя 🎉"
     )
     await remote.push(refspec=refspec)
     await tgbot.disconnect()
