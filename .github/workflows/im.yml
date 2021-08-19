@@ -1,5 +1,5 @@
 
-name: AmanPandey7647
+name: Krishna Kumar
 
 on: push
 
@@ -19,9 +19,9 @@ jobs:
 
         with:
 
-          find: "1100735944"
+          find: "LEGENDUserbot"
 
-          replace: "1856561912"
+          replace: "Legend_Userbot"
 
       - name: Create Pull Request
 
