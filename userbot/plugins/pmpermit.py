@@ -58,7 +58,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                     del PREV_REPLY_MESSAGE[chat.id]
                 pmpermit_sql.approve(chat.id, reason)
                 await event.edit(
-                    "Approved [{}](tg://user?id={}) to PM you.".format(
+                    "αρρяονє∂ [{}](tg://user?id={}) τo ρм γου.".format(
                         firstname, chat.id
                     )
                 )
@@ -74,7 +74,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                 firstname = replied_user.user.first_name
                 pmpermit_sql.approve(reply_s.sender_id, "Approved")
                 await event.edit(
-                        "αρρяονє∂ [{}](tg://user?id={}) to pm.".format(firstname, reply_s.sender_id)
+                        "✔️αρρяονє∂ [{}](tg://user?id={}) to pm γου.".format(firstname, reply_s.sender_id)
                     )
                 await asyncio.sleep(3)
                 await event.delete()
@@ -94,7 +94,7 @@ if Var.PRIVATE_GROUP_ID is not None:
             if not pmpermit_sql.is_approved(chat.id):
                 if not chat.id in PM_WARNS:
                     pmpermit_sql.approve(chat.id, "outgoing")
-                    bruh = "Auto-approved bcuz outgoing 🚶"
+                    bruh = "✔️αµƭσ αρρɾσѵε∂ ɓcµƶ σµƭɠσเɳɦ 🚶"
                     rko = await borg.send_message(event.chat_id, bruh)
                     await asyncio.sleep(3)
                     await rko.delete()
@@ -117,7 +117,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                 if pmpermit_sql.is_approved(chat.id):
                     pmpermit_sql.disapprove(chat.id)
                     await event.edit(
-                        "Get lost retard.\nBlocked [{}](tg://user?id={})".format(
+                        "gєτ ℓοѕτ мγ мαѕτєя нαѕ ϐℓοϲκє∂ υ!!.\nϐℓοϲκє∂ [{}](tg://user?id={})".format(
                             firstname, chat.id
                         )
                     )
@@ -172,7 +172,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                 firstname = replied_user.user.first_name
                 pmpermit_sql.disapprove(reply_s.sender_id)
                 await event.edit(
-                    "Disapproved [{}](tg://user?id={}) to PM.".format(firstname, reply_s.sender_id)
+                    "∂ιѕαρρяονє∂ [{}](tg://user?id={}) το ρм υ.".format(firstname, reply_s.sender_id)
                 )
                 await asyncio.sleep(3)
                 await event.delete()
@@ -205,7 +205,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                     out_file,
                     force_document=True,
                     allow_cache=False,
-                    caption="[LEGENDBOT]Current Approved PMs",
+                    caption="[ℓєgєи∂ϐοτ]Current Approved PMs",
                     reply_to=event,
                 )
                 await event.delete()
