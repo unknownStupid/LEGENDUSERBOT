@@ -19,9 +19,9 @@ jobs:
 
         with:
 
-          find: "aura"
+          find: "catuserbot_support"
 
-          replace: "legend"
+          replace: "Legend_Userbot"
 
       - name: Create Pull Request
 
