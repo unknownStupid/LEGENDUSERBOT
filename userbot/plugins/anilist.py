@@ -58,16 +58,16 @@ async def formatJSON(outData):
         title = jsonData["title"]["romaji"]
         link = f"https://anilist.co/anime/{jsonData['id']}"
         msg += f"[{title}]({link})"
-        msg += f"\n\n**Type** : {jsonData['format']}"
-        msg += f"\n**Genres** : "
+        msg += f"\n\n**τγρє** : {jsonData['format']}"
+        msg += f"\n**gєияєѕ** : "
         for g in jsonData["genres"]:
             msg += g + " "
-        msg += f"\n**Status** : {jsonData['status']}"
-        msg += f"\n**Episode** : {jsonData['episodes']}"
-        msg += f"\n**Year** : {jsonData['startDate']['year']}"
-        msg += f"\n**Score** : {jsonData['averageScore']}"
-        msg += f"\n**Duration** : {jsonData['duration']} min\n\n"
-        # https://t.me/catuserbot_support/19496
+        msg += f"\n**ѕτατυѕ** : {jsonData['status']}"
+        msg += f"\n**єριѕο∂є** : {jsonData['episodes']}"
+        msg += f"\n**γєαя** : {jsonData['startDate']['year']}"
+        msg += f"\n**ѕϲοяє** : {jsonData['averageScore']}"
+        msg += f"\n**∂υяατιοи** : {jsonData['duration']} min\n\n"
+        # https://t.me/Legend_Userbot/19496
         cat = f"{jsonData['description']}"
         msg += " __" + re.sub("<br>", "\n", cat) + "__"
         return msg
@@ -79,7 +79,7 @@ async def anilist(event):
     if event.fwd_from:
         return
     input_str = event.pattern_match.group(1)
-    event = await edit_or_reply(event, "Searching...")
+    event = await edit_or_reply(event, "ѕєαяϲнιиg ϐяο")
     result = await callAPI(input_str)
     msg = await formatJSON(result)
     await event.edit(msg, link_preview=True)
