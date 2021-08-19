@@ -66,7 +66,7 @@ async def amireallyalive(alive):
         LEGEND_caption = f"**{CUSTOM_ALIVE_TEXT}**\n"
         
         LEGEND_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
-        LEGEND_caption += f"      🥇𝕭𝖔𝖙 𝕾𝖙𝖆𝖙𝖚𝖘🥇\n"
+        LEGEND_caption += f"      𝕭𝖔𝖙 𝕾𝖙𝖆𝖙𝖚𝖘\n"
         LEGEND_caption += f"•⚜️• 𝕺ωɳεɾ       : {mention}\n\n"
         LEGEND_caption += f"•⚡• 𝕷êgëñd𝕭øt  : {LEGENDversion}\n"
         LEGEND_caption += f"•⚡• 𝕿єℓєτнοи   : `{version.__version__}`\n"
