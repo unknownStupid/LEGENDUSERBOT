@@ -6,7 +6,7 @@ from userbot import *
 from LEGENDBOT.utils import admin_cmd, edit_or_reply, sudo_cmd
 from userbot.cmdhelp import CmdHelp
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "ν2.ο"
 @bot.on(admin_cmd(pattern="think$"))
 @bot.on(sudo_cmd(pattern="think$", allow_sudo=True))
 async def _(event):
