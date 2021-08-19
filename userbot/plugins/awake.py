@@ -67,10 +67,10 @@ async def amireallyalive(alive):
         
         LEGEND_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
         LEGEND_caption += f"     💫 𝕷êgëñd𝕭øt ιѕ αωακє 💫\n"
-        LEGEND_caption += f"•⚡• 𝕷êgëñd𝕭øt  : ν2.ο\n"
-        LEGEND_caption += f"•⚡• 𝕿єℓєτнοи   : `{version.__version__}`\n"
-        LEGEND_caption += f"•⚡• 𝖀ptïmê       : `{uptime}`\n"
-        LEGEND_caption += f"•⚡• Gяουρ        : [𝕮нαииєℓ](t.me/Its_LegendBot)\n"
+        LEGEND_caption += f"•⚡• 𝕷êgëñd𝕭øt    : ν2.ο\n"
+        LEGEND_caption += f"•⚡• 𝕿єℓєτнοи      : `{version.__version__}`\n"
+        LEGEND_caption += f"•⚡• 𝖀ptïmê          : `{uptime}`\n"
+        LEGEND_caption += f"•⚡• 𝕮нαииєℓ        : [𝕮нαииєℓ](t.me/Its_LegendBot)\n"
         LEGEND_caption += f"•⚡• Mγ Gяουρ : {CUSTOM_MY_GROUP}\n"   
 
         await alive.client.send_file(
