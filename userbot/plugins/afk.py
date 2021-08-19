@@ -1,5 +1,5 @@
 # by uniborg...Thanks @Legend_Mr_Hacker
-# Now will be used in LEGENDlBOT too....
+# Now will be used in LEGENDBOT too....
 import asyncio
 import datetime
 from datetime import datetime
@@ -44,7 +44,7 @@ async def set_not_afk(event):
     if ".afk" not in current_message and "yes" in USER_AFK:  # pylint:disable=E0602
         LEGENDBOT = await borg.send_message(
             event.chat_id,
-            "🔥Bαϲκ αℓινє !\n**и𝔬 𝔏οиgєя мοяє 𝔞ƒκ.**\n⏱️ `աαs αƒk for:``"
+            "🔥ι αм ϐαϲκ αℓινє !\n**и𝔬 𝔏οиgєя 𝔞ƒκ.**\n⏱️ `աαs αƒk fοя:``"
             + total_afk_time
             + "`", file=LEGENDpic
         )
@@ -52,7 +52,7 @@ async def set_not_afk(event):
             await borg.send_message(  # pylint:disable=E0602
                 Config.PRIVATE_GROUP_BOT_API_ID,  # pylint:disable=E0602
                 "#AFKFALSE \nSet AFK mode to False\nReply to pic and use .afk reason"
-                + "🔥Bαck αℓινє\n**𝔑𝔬 𝔏𝔬𝔫𝔤𝔢𝔯 𝔞𝔣𝔨.**\n⏱️ `աαs αբk for:``"
+                + "🔥ι αм ϐαϲκ αℓινє\n**𝔑𝔬 𝔏𝔬𝔫𝔤𝔢𝔯 𝔞𝔣𝔨.**\n⏱️ `աαs αբk for:``"
                 + total_afk_time
             )
         except Exception as e:  # pylint:disable=C0103,W0703
