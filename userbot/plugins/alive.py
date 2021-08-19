@@ -72,7 +72,7 @@ async def amireallyalive(alive):
         LEGEND_caption += f"•⚡• 𝕿єℓєτнοи   : `{version.__version__}`\n"
         LEGEND_caption += f"•⚡• 𝖀ptïmê       : `{uptime}`\n"
         LEGEND_caption += f"•⚡• Gяουρ        : [𝕲𝖗𝖔𝖚𝖕](t.me/Legend_Userbot)\n"
-        LEGEND_caption += f"•⚡• Mγ Gяουρ        : `{CUSTOM_MY_GROUP}`\n"   
+        LEGEND_caption += f"•⚡• Mγ Gяουρ : {CUSTOM_MY_GROUP}\n"   
 
         await alive.client.send_file(
             alive.chat_id, LEGEND_IMG, caption=LEGEND_caption, reply_to=reply_to_id
