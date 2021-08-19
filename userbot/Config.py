@@ -97,7 +97,7 @@ if ENV:
         # DataBase would not work
         DB_URI = os.environ.get("DATABASE_URL", None)
         # number of rows of buttons to be displayed in .legend command
-        BUTTONS_IN_HELP = int(os.environ.get("NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD", 8))
+        BUTTONS_IN_HELP = int(os.environ.get("NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD", 7))
         #open load
         OPEN_LOAD_LOGIN = os.environ.get("OPEN_LOAD_LOGIN", None)
         OPEN_LOAD_KEY = os.environ.get("OPEN_LOAD_KEY", None)
@@ -144,6 +144,7 @@ if ENV:
         ALIVE_PIC = os.environ.get("ALIVE_PIC", None)
         AWAKE_PIC = os.environ.get("ALIVE_PIC", None)
         ALIVE_MSG = os.environ.get("ALIVE_MSG", None)
+        MY_GROUP = os.environ.get("MY_GROUP", None)
         BOT_PIC = os.environ.get("ALIVE_PIC", None)
         #auto bio
         BIO_MSG = os.environ.get("ALIVE_MSG", None)
