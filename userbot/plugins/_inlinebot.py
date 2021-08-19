@@ -129,7 +129,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await delete_LEGEND(event,
-              "⚜️мєиυ ρяονι∂єя нαѕ ϐєєи ϲℓοѕє∂ ϐγ {ALIVE_NAME}💫\n\n            **[©ℓєgєи∂ϐοτ](https://t.me/Legend_Userbot)**", 5, link_preview=False
+              "⚜️мєиυ ρяονι∂єя нαѕ ϐєєи ϲℓοѕє∂ ϐγ My Master💫\n\n                         **[©『𝕷𝐞̂𝐠𝐞́𝐧̃𝐝𝕭ø𝖙』](https://t.me/Legend_Userbot)**", 5, link_preview=False
             )
         else:
             LEGEND_alert = "οн ϲοммοи γαяя υ τнιиκ υ ϲαи ϲℓιϲκ οи ιτ😁😁😁. ∂єρℓογ υя οωи ϐοτ ©ℓεɠεɳ∂ɓσƭ(https://t.me/Legend_Userbot)"
