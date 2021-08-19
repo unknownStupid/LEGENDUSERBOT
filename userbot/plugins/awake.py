@@ -57,8 +57,8 @@ uptime = get_readable_time((time.time() - StartTime))
 
 @bot.on(admin_cmd(outgoing=True, pattern="awake$"))
 @bot.on(sudo_cmd(pattern="awake$", allow_sudo=True))
-async def amireallyalive(alive):
-    if alive.fwd_from:
+async def amireallyalive(event):
+    if event.fwd_from:
         return
     reply_to_id = await reply_id(alive)
 
@@ -73,10 +73,10 @@ async def amireallyalive(alive):
         LEGEND_caption += f"•⚡• 𝕮нαииєℓ        : [𝕮нαииєℓ](t.me/Its_LegendBot)\n"
         LEGEND_caption += f"•⚡• Mγ Gяουρ : {CUSTOM_MY_GROUP}\n"   
 
-        await alive.client.send_file(
-            alive.chat_id, LEGEND_IMG, caption=LEGEND_caption, reply_to=reply_to_id
+        await event.client.send_file(
+            event.chat_id, LEGEND_IMG, caption=LEGEND_caption, reply_to=reply_to_id
         )
-        await alive.delete()
+        await event.delete()
     else:
         await edit_or_reply(
             alive,
