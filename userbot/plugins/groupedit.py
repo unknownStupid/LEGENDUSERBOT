@@ -96,21 +96,21 @@ async def set_group_photo(gpic):
             photo = await gpic.client.download_file(replymsg.media.document)
         else:
             await edit_or_reply(gpic, INVALID_MEDIA)
-    aura = None
+    legend = None
     if photo:
         try:
             await gpic.client(
                 EditPhotoRequest(gpic.chat_id, await gpic.client.upload_file(photo))
             )
             await edit_or_reply(gpic, CHAT_PP_CHANGED)
-            aura = True
+            legend = True
         except PhotoCropSizeSmallError:
             await edit_or_reply(gpic, PP_TOO_SMOL)
         except ImageProcessFailedError:
             await edit_or_reply(gpic, PP_ERROR)
         except Exception as e:
             await edit_or_reply(gpic, f"**Error : **`{str(e)}`")
-        if BOTLOG and aura:
+        if BOTLOG and legend:
             await gpic.client.send_message(
                 BOTLOG_CHATID,
                 "#GROUPPIC\n"

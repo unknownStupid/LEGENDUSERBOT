@@ -30,9 +30,9 @@ async def echo(LEGEND):
         user_id = reply_msg.sender_id
         chat_id = LEGEND.chat_id
         try:
-            aura = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
-            aura = Get(aura)
-            await LEGEND.client(aura)
+            legend = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
+            legend = Get(legend)
+            await LEGEND.client(legend)
         except BaseException:
             pass
         if is_echo(user_id, chat_id):
@@ -54,9 +54,9 @@ async def echo(LEGEND):
         user_id = reply_msg.sender_id
         chat_id = LEGEND.chat_id
         try:
-            aura = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
-            aura = Get(aura)
-            await LEGEND.client(aura)
+            legend = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
+            legend = Get(legend)
+            await LEGEND.client(legend)
         except BaseException:
             pass
         if is_echo(user_id, chat_id):
@@ -105,9 +105,9 @@ async def samereply(LEGEND):
     if is_echo(LEGEND.sender_id, LEGEND.chat_id):
         await asyncio.sleep(2)
         try:
-            aura = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
-            aura = Get(aura)
-            await LEGEND.client(aura)
+            legend = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
+            legend = Get(legend)
+            await LEGEND.client(legend)
         except BaseException:
             pass
         if LEGEND.message.text or LEGEND.message.sticker:

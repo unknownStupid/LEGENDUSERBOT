@@ -10,7 +10,7 @@ from userbot.cmdhelp import CmdHelp
 
 LEGEND_NAME = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
 
-aura = bot.uid
+legend = bot.uid
 
 telegraph = Telegraph()
 r = telegraph.create_account(short_name=Config.TELEGRAPH_SHORT_NAME)
@@ -62,7 +62,7 @@ async def _(event):
                 os.remove(downloaded_file_name)
                 await edit_or_reply(event, 
                    "✓ **YOUR FILE :-** https://telegra.ph{} \n✓ **Time Taken :-** `{}` secs \n✓ **By :- [{}](tg://user?id={})**".format(
-                        media_urls[0], (ms + ms_two), LEGEND_NAME, aura
+                        media_urls[0], (ms + ms_two), LEGEND_NAME, legend
                     ),
                     link_preview=True,
                 )
@@ -91,7 +91,7 @@ async def _(event):
             ms = (end - start).seconds
             David99q = f"https://telegra.ph/{response['path']}"
             await edit_or_reply(event, 
-                  f"✓ **Pasted to** [telegraph]({David99q}) \n✓ **Time Taken :-** `{ms}` secs\n✓** By :- **[{LEGEND_NAME}](tg://user?id={aura})", link_preview=True)
+                  f"✓ **Pasted to** [telegraph]({David99q}) \n✓ **Time Taken :-** `{ms}` secs\n✓** By :- **[{LEGEND_NAME}](tg://user?id={legend})", link_preview=True)
     else:
         await edit_or_reply(event, 
             "Reply to a message to get a permanent telegra.ph link."

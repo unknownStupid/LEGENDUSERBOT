@@ -179,7 +179,7 @@ async def _(event):
             await event.client.send_read_acknowledge(conv.chat_id)
             LEGENDfile = Path(await event.client.download_media(LEGENDresponse, "./temp/"))
             LEGENDgif = Path(await unzip(LEGENDfile))
-            aura = await event.client.send_file(
+            legend = await event.client.send_file(
                 event.chat_id,
                 LEGENDgif,
                 support_streaming=True,
@@ -189,9 +189,9 @@ async def _(event):
             await event.client(
                 functions.messages.SaveGifRequest(
                     id=types.InputDocument(
-                        id=aura.media.document.id,
-                        access_hash=aura.media.document.access_hash,
-                        file_reference=aura.media.document.file_reference,
+                        id=legend.media.document.id,
+                        access_hash=legend.media.document.access_hash,
+                        file_reference=legend.media.document.file_reference,
                     ),
                     unsave=True,
                 )

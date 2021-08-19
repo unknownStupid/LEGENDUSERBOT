@@ -73,7 +73,7 @@ async def get_users(event):
         LEGEND = await edit_or_reply(event, "`processing...`")
     else:
         LEGEND = await edit_or_reply(event, "`processing...`")
-    aura = await get_chatinfo(event)
+    legend = await get_chatinfo(event)
     chat = await event.get_chat()
     if event.is_private:
         return await LEGEND.edit("`Sorry, Cant add users here`")
@@ -82,7 +82,7 @@ async def get_users(event):
     error = "None"
 
     await LEGEND.edit("**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸ιиνιτιиg Ⴎѕєяѕ.......`")
-    async for user in event.client.iter_participants(aura.full_chat.id):
+    async for user in event.client.iter_participants(legend.full_chat.id):
         try:
             if error.startswith("Too"):
                 return await LEGEND.edit(

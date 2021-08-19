@@ -19,7 +19,7 @@ from userbot.cmdhelp import CmdHelp
 GENDER = [
     "u is mard",
     "u is man",
-    "u is aurat",
+    "u is legendt",
     "u is woman",
     "u is gey",
     "u is chakka",

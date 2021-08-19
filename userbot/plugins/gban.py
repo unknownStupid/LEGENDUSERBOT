@@ -193,29 +193,29 @@ async def gunban(userbot):
 
 
 @borg.on(ChatAction)
-async def handler(aura): 
-   if aura.user_joined or aura.user_added:      
+async def handler(legend): 
+   if legend.user_joined or legend.user_added:      
        try:       	
          from userbot.plugins.sql_helper.gmute_sql import is_gmuted
-         guser = await aura.get_user()      
+         guser = await legend.get_user()      
          gmuted = is_gmuted(guser.id)             
        except:      
           return
        if gmuted:
         for i in gmuted:
             if i.sender == str(guser.id):                                                                         
-                chat = await aura.get_chat()
+                chat = await legend.get_chat()
                 admin = chat.admin_rights
                 creator = chat.creator   
                 if admin or creator:
                  try:
-                    await client.edit_permissions(aura.chat_id, guser.id, view_messages=False)                              
-                    await aura.reply(
+                    await client.edit_permissions(legend.chat_id, guser.id, view_messages=False)                              
+                    await legend.reply(
                      f"⚠️⚠️**Warning**⚠️⚠️\n\n`Gbanned User Joined the chat!!`\n"                      
                      f"**⚜️ Victim Id ⚜️**:\n[{guser.id}](tg://user?id={guser.id})\n"                   
                      f"**🔥 Action 🔥**  :\n`Banned this piece of shit....` **AGAIN!**")                                                
                  except:       
-                    aura.reply("`Sheit!! No permission to ban users.\n@admins ban this retard.\nGlobally Banned User And A Potential Spammer`\n**Make your group a safe place by cleaning this shit**")                   
+                    legend.reply("`Sheit!! No permission to ban users.\n@admins ban this retard.\nGlobally Banned User And A Potential Spammer`\n**Make your group a safe place by cleaning this shit**")                   
                     return
                   
                   

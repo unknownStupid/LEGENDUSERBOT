@@ -17,9 +17,9 @@ if ludosudo:
 else:
     sudou = "False"
 
-aura = bot.uid
+legend = bot.uid
 
-mention = f"[{DEFAULTUSER}](tg://user?id={aura})"
+mention = f"[{DEFAULTUSER}](tg://user?id={legend})"
 
 
 PM_IMG = "https://telegra.ph/file/71339ef5c1b34cffa6cb5.jpg"

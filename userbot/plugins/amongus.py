@@ -15,8 +15,8 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND User"
 async def _(event):
     if event.fwd_from:
         return
-    aura = bot.uid
-    USERNAME = f"tg://user?id={aura}"
+    legend = bot.uid
+    USERNAME = f"tg://user?id={legend}"
     name = event.pattern_match.group(2)
     cmd = event.pattern_match.group(1).lower()
     text1 = await edit_or_reply(event, "Hmm... Looks like Something is wrong here🤔🧐!!")

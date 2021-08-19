@@ -10,7 +10,7 @@ mention = f"[{DEFAULTUSER}](tg://user?id={USERID})"
 
 @bot.on(admin_cmd(pattern="car (.*)"))
 @bot.on(sudo_cmd(pattern="car (.*)", allow_sudo=True))
-async def aura(carry):
+async def legend(carry):
     if carry.fwd_from:
         return
     name = carry.pattern_match.group(1)
@@ -22,7 +22,7 @@ async def aura(carry):
 
 @bot.on(admin_cmd(pattern="ded (.*)"))
 @bot.on(sudo_cmd(pattern="ded (.*)", allow_sudo=True))
-async def aura(ded):
+async def legend(ded):
     if ded.fwd_from:
         return
     name = ded.pattern_match.group(1)
@@ -63,7 +63,7 @@ A = (
 
 @bot.on(admin_cmd(pattern="sthink (.*)"))
 @bot.on(sudo_cmd(pattern="sthink (.*)", allow_sudo=True))
-async def aura(think):
+async def legend(think):
     if think.fwd_from:
         return
     name = think.pattern_match.group(1)
@@ -90,7 +90,7 @@ async def aura(think):
 
 @bot.on(admin_cmd(pattern="sfrog (.*)"))
 @bot.on(sudo_cmd(pattern="sfrog (.*)", allow_sudo=True))
-async def aura(frogsay):
+async def legend(frogsay):
     if frogsay.fwd_from:
         return
     name = frogsay.pattern_match.group(1)
@@ -117,7 +117,7 @@ async def aura(frogsay):
 
 @bot.on(admin_cmd(pattern="sdead (.*)"))
 @bot.on(sudo_cmd(pattern="sdead (.*)", allow_sudo=True))
-async def aura(deadfrog):
+async def legend(deadfrog):
     if deadfrog.fwd_from:
         return
     name = deadfrog.pattern_match.group(1)
@@ -144,7 +144,7 @@ async def aura(deadfrog):
 
 @bot.on(admin_cmd(pattern="strump (.*)"))
 @bot.on(sudo_cmd(pattern="strump (.*)", allow_sudo=True))
-async def aura(trumpsay):
+async def legend(trumpsay):
     if trumpsay.fwd_from:
         return
     name = trumpsay.pattern_match.group(1)
@@ -171,7 +171,7 @@ async def aura(trumpsay):
 
 @bot.on(admin_cmd(pattern="schina (.*)"))
 @bot.on(sudo_cmd(pattern="schina (.*)", allow_sudo=True))
-async def aura(ckmkb):
+async def legend(ckmkb):
     if ckmkb.fwd_from:
         return
     name = ckmkb.pattern_match.group(1)
@@ -199,7 +199,7 @@ async def aura(ckmkb):
 
 @bot.on(admin_cmd(pattern=r"sshit$"))
 @bot.on(sudo_cmd(pattern="sshit$", allow_sudo=True))
-async def aura(shit):
+async def legend(shit):
     if shit.fwd_from:
         return
     await edit_or_reply(shit, A)

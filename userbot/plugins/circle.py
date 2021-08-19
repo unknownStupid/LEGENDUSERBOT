@@ -21,7 +21,7 @@ async def _(event):
     if reply_message.sender.bot:
         await edit_or_reply(event, "Reply to actual users message.")
         return
-    aura = await edit_or_reply(event, "Trying to convert...")
+    legend = await edit_or_reply(event, "Trying to convert...")
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
@@ -30,14 +30,14 @@ async def _(event):
             await event.client.send_message(chat, reply_message)
             response = await response
         except YouBlockedUserError:
-            await aura.edit("```Please unblock @TelescopyBot and try again```")
+            await legend.edit("```Please unblock @TelescopyBot and try again```")
             return
         if response.text.startswith("Forward"):
-            await aura.edit(
+            await legend.edit(
                 "```can you kindly disable your forward privacy settings for good?```"
             )
         else:
-            await aura.delete()
+            await legend.delete()
             await event.client.send_file(
                 event.chat_id,
                 response.message.media,

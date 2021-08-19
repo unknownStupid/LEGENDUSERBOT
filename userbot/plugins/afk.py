@@ -112,7 +112,7 @@ async def on_afk(event):
 async def _(event):
     if event.fwd_from:
         return
-    aura = await event.get_reply_message()
+    legend = await event.get_reply_message()
     global USER_AFK  # pylint:disable=E0602
     global afk_time  # pylint:disable=E0602
     global last_afk_message  # pylint:disable=E0602
@@ -127,7 +127,7 @@ async def _(event):
     start_1 = datetime.now()
     afk_start = start_1.replace(microsecond=0)
     reason = event.pattern_match.group(1)
-    LEGENDpic = await event.client.download_media(aura)
+    LEGENDpic = await event.client.download_media(legend)
     if not USER_AFK:  # pylint:disable=E0602
         last_seen_status = await borg(  # pylint:disable=E0602
             functions.account.GetPrivacyRequest(types.InputPrivacyKeyStatusTimestamp())

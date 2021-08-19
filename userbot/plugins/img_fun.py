@@ -67,7 +67,7 @@ async def memes(LEGEND):
         return
     import base64
 
-    aura = None
+    legend = None
     if LEGENDsticker.endswith(".tgs"):
         await LEGEND.edit(
             "Analyzing this media 🧐  inverting colors of this animated sticker!"
@@ -81,7 +81,7 @@ async def memes(LEGEND):
             await LEGEND.edit("`Template not found...`")
             LOGS.info(stdout + stderr)
         meme_file = LEGENDfile
-        aura = True
+        legend = True
     elif LEGENDsticker.endswith(".webp"):
         await LEGEND.edit(
             "`Analyzing this media 🧐 inverting colors...`"
@@ -92,7 +92,7 @@ async def memes(LEGEND):
             await LEGEND.edit("`Template not found... `")
             return
         meme_file = LEGENDfile
-        aura = True
+        legend = True
     elif LEGENDsticker.endswith((".mp4", ".mov")):
         await LEGEND.edit(
             "Analyzing this media 🧐 inverting colors of this video!"
@@ -103,7 +103,7 @@ async def memes(LEGEND):
             await LEGEND.edit("```Template not found...```")
             return
         meme_file = LEGENDfile
-        aura = True
+        legend = True
     else:
         await LEGEND.edit(
             "Analyzing this media 🧐 inverting colors of this image!"
@@ -116,7 +116,7 @@ async def memes(LEGEND):
     except BaseException:
         pass
     meme_file = convert_toimage(meme_file)
-    outputfile = "invert.webp" if aura else "invert.jpg"
+    outputfile = "invert.webp" if legend else "invert.jpg"
     await invert_colors(meme_file, outputfile)
     await LEGEND.client.send_file(
         LEGEND.chat_id, outputfile, force_document=False, reply_to=LEGENDid
@@ -151,7 +151,7 @@ async def memes(LEGEND):
         return
     import base64
 
-    aura = None
+    legend = None
     if LEGENDsticker.endswith(".tgs"):
         await LEGEND.edit(
             "Analyzing this media 🧐 solarizeing this animated sticker!"
@@ -165,7 +165,7 @@ async def memes(LEGEND):
             await LEGEND.edit("`Template not found...`")
             LOGS.info(stdout + stderr)
         meme_file = LEGENDfile
-        aura = True
+        legend = True
     elif LEGENDsticker.endswith(".webp"):
         await LEGEND.edit(
             "Analyzing this media 🧐 solarizeing this sticker!"
@@ -176,7 +176,7 @@ async def memes(LEGEND):
             await LEGEND.edit("`Template not found... `")
             return
         meme_file = LEGENDfile
-        aura = True
+        legend = True
     elif LEGENDsticker.endswith((".mp4", ".mov")):
         await LEGEND.edit(
             "Analyzing this media 🧐 solarizeing this video!"
@@ -187,7 +187,7 @@ async def memes(LEGEND):
             await LEGEND.edit("```Template not found...```")
             return
         meme_file = LEGENDfile
-        aura = True
+        legend = True
     else:
         await LEGEND.edit(
             "Analyzing this media 🧐 solarizeing this image!"
@@ -200,7 +200,7 @@ async def memes(LEGEND):
     except BaseException:
         pass
     meme_file = convert_toimage(meme_file)
-    outputfile = "solarize.webp" if aura else "solarize.jpg"
+    outputfile = "solarize.webp" if legend else "solarize.jpg"
     await solarize(meme_file, outputfile)
     await LEGEND.client.send_file(
         LEGEND.chat_id, outputfile, force_document=False, reply_to=LEGENDid
@@ -235,7 +235,7 @@ async def memes(LEGEND):
         return
     import base64
 
-    aura = None
+    legend = None
     if LEGENDsticker.endswith(".tgs"):
         await LEGEND.edit(
             "Analyzing this media 🧐 converting to mirror image of this animated sticker!"
@@ -249,7 +249,7 @@ async def memes(LEGEND):
             await LEGEND.edit("`Template not found...`")
             LOGS.info(stdout + stderr)
         meme_file = LEGENDfile
-        aura = True
+        legend = True
     elif LEGENDsticker.endswith(".webp"):
         await LEGEND.edit(
             "Analyzing this media 🧐 converting to mirror image of this sticker!"
@@ -260,7 +260,7 @@ async def memes(LEGEND):
             await LEGEND.edit("`Template not found... `")
             return
         meme_file = LEGENDfile
-        aura = True
+        legend = True
     elif LEGENDsticker.endswith((".mp4", ".mov")):
         await LEGEND.edit(
             "Analyzing this media 🧐 converting to mirror image of this video!"
@@ -271,7 +271,7 @@ async def memes(LEGEND):
             await LEGEND.edit("```Template not found...```")
             return
         meme_file = LEGENDfile
-        aura = True
+        legend = True
     else:
         await LEGEND.edit(
             "Analyzing this media 🧐 converting to mirror image of this image!"
@@ -284,7 +284,7 @@ async def memes(LEGEND):
     except BaseException:
         pass
     meme_file = convert_toimage(meme_file)
-    outputfile = "mirror_file.webp" if aura else "mirror_file.jpg"
+    outputfile = "mirror_file.webp" if legend else "mirror_file.jpg"
     await mirror_file(meme_file, outputfile)
     await LEGEND.client.send_file(
         LEGEND.chat_id, outputfile, force_document=False, reply_to=LEGENDid
@@ -319,7 +319,7 @@ async def memes(LEGEND):
         return
     import base64
 
-    aura = None
+    legend = None
     if LEGENDsticker.endswith(".tgs"):
         await LEGEND.edit(
             "Analyzing this media 🧐 fliping this animated sticker!"
@@ -333,7 +333,7 @@ async def memes(LEGEND):
             await LEGEND.edit("`Template not found...`")
             LOGS.info(stdout + stderr)
         meme_file = LEGENDfile
-        aura = True
+        legend = True
     elif LEGENDsticker.endswith(".webp"):
         await LEGEND.edit(
             "Analyzing this media 🧐 fliping this sticker!"
@@ -344,7 +344,7 @@ async def memes(LEGEND):
             await LEGEND.edit("`Template not found... `")
             return
         meme_file = LEGENDfile
-        aura = True
+        legend = True
     elif LEGENDsticker.endswith((".mp4", ".mov")):
         await LEGEND.edit(
             "Analyzing this media 🧐 fliping this video!"
@@ -355,7 +355,7 @@ async def memes(LEGEND):
             await LEGEND.edit("```Template not found...```")
             return
         meme_file = LEGENDfile
-        aura = True
+        legend = True
     else:
         await LEGEND.edit(
             "Analyzing this media 🧐 fliping this image!"
@@ -368,7 +368,7 @@ async def memes(LEGEND):
     except BaseException:
         pass
     meme_file = convert_toimage(meme_file)
-    outputfile = "flip_image.webp" if aura else "flip_image.jpg"
+    outputfile = "flip_image.webp" if legend else "flip_image.jpg"
     await flip_image(meme_file, outputfile)
     await LEGEND.client.send_file(
         LEGEND.chat_id, outputfile, force_document=False, reply_to=LEGENDid
@@ -403,7 +403,7 @@ async def memes(LEGEND):
         return
     import base64
 
-    aura = None
+    legend = None
     if LEGENDsticker.endswith(".tgs"):
         await LEGEND.edit(
             "Analyzing this media 🧐 changing to black-and-white this animated sticker!"
@@ -417,7 +417,7 @@ async def memes(LEGEND):
             await LEGEND.edit("`Template not found...`")
             LOGS.info(stdout + stderr)
         meme_file = LEGENDfile
-        aura = True
+        legend = True
     elif LEGENDsticker.endswith(".webp"):
         await LEGEND.edit(
             "Analyzing this media 🧐 changing to black-and-white this sticker!"
@@ -428,7 +428,7 @@ async def memes(LEGEND):
             await LEGEND.edit("`Template not found... `")
             return
         meme_file = LEGENDfile
-        aura = True
+        legend = True
     elif LEGENDsticker.endswith((".mp4", ".mov")):
         await LEGEND.edit(
             "Analyzing this media 🧐 changing to black-and-white this video!"
@@ -439,7 +439,7 @@ async def memes(LEGEND):
             await LEGEND.edit("```Template not found...```")
             return
         meme_file = LEGENDfile
-        aura = True
+        legend = True
     else:
         await LEGEND.edit(
             "Analyzing this media 🧐 changing to black-and-white this image!"
@@ -452,7 +452,7 @@ async def memes(LEGEND):
     except BaseException:
         pass
     meme_file = convert_toimage(meme_file)
-    outputfile = "grayscale.webp" if aura else "grayscale.jpg"
+    outputfile = "grayscale.webp" if legend else "grayscale.jpg"
     await grayscale(meme_file, outputfile)
     await LEGEND.client.send_file(
         LEGEND.chat_id, outputfile, force_document=False, reply_to=LEGENDid
@@ -489,7 +489,7 @@ async def memes(LEGEND):
         return
     import base64
 
-    aura = None
+    legend = None
     if LEGENDsticker.endswith(".tgs"):
         await LEGEND.edit(
             "Analyzing this media 🧐 zooming this animated sticker!"
@@ -503,7 +503,7 @@ async def memes(LEGEND):
             await LEGEND.edit("`Template not found...`")
             LOGS.info(stdout + stderr)
         meme_file = LEGENDfile
-        aura = True
+        legend = True
     elif LEGENDsticker.endswith(".webp"):
         await LEGEND.edit(
             "Analyzing this media 🧐 zooming this sticker!"
@@ -514,7 +514,7 @@ async def memes(LEGEND):
             await LEGEND.edit("`Template not found... `")
             return
         meme_file = LEGENDfile
-        aura = True
+        legend = True
     elif LEGENDsticker.endswith((".mp4", ".mov")):
         await LEGEND.edit(
             "Analyzing this media 🧐 zooming this video!"
@@ -537,7 +537,7 @@ async def memes(LEGEND):
     except BaseException:
         pass
     meme_file = convert_toimage(meme_file)
-    outputfile = "grayscale.webp" if aura else "grayscale.jpg"
+    outputfile = "grayscale.webp" if legend else "grayscale.jpg"
     try:
         await crop(meme_file, outputfile, LEGENDinput)
     except Exception as e:
@@ -587,7 +587,7 @@ async def memes(LEGEND):
         return
     import base64
 
-    aura = None
+    legend = None
     if LEGENDsticker.endswith(".tgs"):
         await LEGEND.edit(
             "Analyzing this media 🧐 framing this animated sticker!"
@@ -601,7 +601,7 @@ async def memes(LEGEND):
             await LEGEND.edit("`Template not found...`")
             LOGS.info(stdout + stderr)
         meme_file = LEGENDfile
-        aura = True
+        legend = True
     elif LEGENDsticker.endswith(".webp"):
         await LEGEND.edit(
             "Analyzing this media 🧐 framing this sticker!"
@@ -612,7 +612,7 @@ async def memes(LEGEND):
             await LEGEND.edit("`Template not found... `")
             return
         meme_file = LEGENDfile
-        aura = True
+        legend = True
     elif LEGENDsticker.endswith((".mp4", ".mov")):
         await LEGEND.edit(
             "Analyzing this media 🧐 framing this video!"
@@ -635,7 +635,7 @@ async def memes(LEGEND):
     except BaseException:
         pass
     meme_file = convert_toimage(meme_file)
-    outputfile = "framed.webp" if aura else "framed.jpg"
+    outputfile = "framed.webp" if legend else "framed.jpg"
     try:
         await add_frame(meme_file, outputfile, LEGENDinput, colr)
     except Exception as e:

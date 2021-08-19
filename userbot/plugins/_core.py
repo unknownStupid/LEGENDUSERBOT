@@ -11,8 +11,8 @@ from . import *
 DELETE_TIMEOUT = 5
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "LEGEND"
 LEGEND_logo = "./LEGEND_logo.jpg"
-aura = bot.uid
-LEGEND = f"[{DEFAULTUSER}](tg://user?id={aura})"
+legend = bot.uid
+LEGEND = f"[{DEFAULTUSER}](tg://user?id={legend})"
 
 @bot.on(admin_cmd(pattern=r"send (?P<shortname>\w+)", outgoing=True))
 @bot.on(sudo_cmd(pattern=r"send (?P<shortname>\w+)", allow_sudo=True))

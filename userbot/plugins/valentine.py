@@ -7,9 +7,9 @@ from LEGENDBOT.utils import admin_cmd, sudo_cmd, edit_or_reply as eor
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Your Lover"
 
-aura = LEGENDBOT.uid
+legend = LEGENDBOT.uid
 
-LEGEND = f"[{DEFAULTUSER}](tg://user?id={aura})"
+LEGEND = f"[{DEFAULTUSER}](tg://user?id={legend})"
 
 @LEGENDBOT.on(admin_cmd(pattern="hvd$"))
 @LEGENDBOT.on(sudo_cmd(pattern="hvd$", allow_sudo=True))

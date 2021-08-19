@@ -4,7 +4,7 @@ import random
 from colorama import Fore, Style, Back
 
 
-aura = """
+legend = """
 ╔╗──╔═══╦═══╦═══╦═╗─╔╦═══╦═══╦═══╦╗──╔╗
 ║║──║╔══╣╔═╗║╔══╣║╚╗║╠╗╔╗║╔═╗║╔═╗║╚╗╔╝║  
 ║║──║╚══╣║─╚╣╚══╣╔╗╚╝║║║║║║─║║╚═╝╠╗╚╝╔╝  
@@ -19,7 +19,7 @@ Made With Love By Team LEGENDBOT
 """
                                                                                                             
 print("")
-print(Style.BRIGHT + Fore.MAGENTA + aura)
+print(Style.BRIGHT + Fore.MAGENTA + legend)
 print(Style.RESET_ALL)
 print(Style.BRIGHT + Fore.BLUE + logo)
 print(Style.RESET_ALL)

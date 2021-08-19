@@ -27,22 +27,22 @@ from userbot.cmdhelp import CmdHelp
 
 @bot.on(admin_cmd(pattern=r"tweet(?: |$)(.*)"))
 @bot.on(sudo_cmd(pattern="tweet(?: |$)(.*)", allow_sudo=True))
-async def nope(aura):
-    LEGEND = aura.pattern_match.group(1)
+async def nope(legend):
+    LEGEND = legend.pattern_match.group(1)
     if not LEGEND:
-        if aura.is_reply:
-            (await aura.get_reply_message()).message
+        if legend.is_reply:
+            (await legend.get_reply_message()).message
         else:
-            await edit_or_reply(aura, "I need some text to make a tweet🚶")
+            await edit_or_reply(legend, "I need some text to make a tweet🚶")
             return
     tweeter = await bot.inline_query("TwitterStatusBot", f"{(deEmojify(LEGEND))}")
     await tweeter[0].click(
-        aura.chat_id,
-        reply_to=aura.reply_to_msg_id,
-        silent=True if aura.is_reply else False,
+        legend.chat_id,
+        reply_to=legend.reply_to_msg_id,
+        silent=True if legend.is_reply else False,
         hide_via=True,
     )
-    await aura.delete()
+    await legend.delete()
 
 
 @bot.on(admin_cmd(pattern=r"trump(?: |$)(.*)"))
