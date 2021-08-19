@@ -19,9 +19,9 @@ jobs:
 
         with:
 
-          find: "LEGENDUserbot"
+          find: "aurax"
 
-          replace: "Legend_Userbot"
+          replace: "legend"
 
       - name: Create Pull Request
 
