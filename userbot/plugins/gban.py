@@ -64,7 +64,7 @@ async def gban(userbot):
     sender = await ids.get_sender()
     hum = await ids.client.get_me()
     if not sender.id == hum.id:
-        LEGENDBOT = await edit_or_reply(ids, "Trying to gban this retard!")
+        LEGENDBOT = await edit_or_reply(ids, "Trying to gban")
     else:
         LEGENDBOT = await edit_or_reply(ids, "`Ok! Gban ho rha h intzarrr karo....`")
     hum = await userbot.client.get_me()
