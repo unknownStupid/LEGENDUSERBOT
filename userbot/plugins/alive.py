@@ -67,11 +67,11 @@ async def amireallyalive(alive):
         
         LEGEND_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
         LEGEND_caption += f"     💫 𝕭𝖔𝖙 𝕾𝖙𝖆𝖙𝖚𝖘 💫\n"
-        LEGEND_caption += f"•⚜️• 𝕺ωɳεɾ       : {mention}\n\n"
-        LEGEND_caption += f"•⚡• 𝕷êgëñd𝕭øt  : {LEGENDversion}\n"
-        LEGEND_caption += f"•⚡• 𝕿єℓєτнοи   : `{version.__version__}`\n"
-        LEGEND_caption += f"•⚡• 𝖀ptïmê       : `{uptime}`\n"
-        LEGEND_caption += f"•⚡• Gяουρ        : [𝕲𝖗𝖔𝖚𝖕](t.me/Legend_Userbot)\n"
+        LEGEND_caption += f"•⚜️• Owner      : {mention}\n\n"
+        LEGEND_caption += f"•⚡• Bot  : {LEGENDversion}\n"
+        LEGEND_caption += f"•⚡• Telethon  : `{version.__version__}`\n"
+        LEGEND_caption += f"•⚡• Uptime      : `{uptime}`\n"
+        LEGEND_caption += f"•⚡• channel       : [𝕲𝖗𝖔𝖚𝖕](t.me/MythicStickers)\n"
         LEGEND_caption += f"•⚡• Mγ Gяουρ : {CUSTOM_MY_GROUP}\n"   
 
         await alive.client.send_file(
@@ -88,7 +88,7 @@ async def amireallyalive(alive):
             f"🇮🇳 ℓєgєи∂ϐοτ  : `{LEGENDversion}`\n"
             f"🇮🇳 υρτιмє        : `{uptime}`\n"
             f"🔱 ɱαรƭεɾ        : {mention}\n"
-            f"🔱 σωɳεɾ         : [ℓєgєи∂](t.me/Legend_Mr_Hacker)\n"
+            f"🔱 σωɳεɾ         : [ℓєgєи∂](t.me/MythicStickers)\n"
         )
 
 CmdHelp("ɓσƭรƭαƭµร").add_command(
