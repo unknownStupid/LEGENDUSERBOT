@@ -623,8 +623,7 @@ async def vapor(vpr):
 @bot.on(sudo_cmd(pattern=f"repo", allow_sudo=True))
 async def source(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await edit_or_reply(e, "Click [here](https://github.com/LEGEND-OS/LEGENDBOT) to open this 🔥**Lit AF!!**🔥 __LEGENDBOT__ Repo.. Join channel :- @LEGEND_Userbot")
-
+        await edit_or_reply(e, "Deploy 『𝕷𝐞̂𝐠𝐞́𝐧̃𝐝𝕭ø𝖙』Smoothest & Fastest [『𝕷𝐞̂𝐠𝐞́𝐧̃𝐝𝕭ø𝖙』](https://github.com/LEGEND-OS/LEGENDBOT)\n👇⚡Tutorial⚡👇\nhttps://youtu.be/bPzvmaQejNM\n 👇Join Legend Group👇\n@Legend_Userbot")
 
 @bot.on(admin_cmd(pattern="str(?: |$)(.*)", outgoing=True))
 @bot.on(sudo_cmd(pattern="str(?: |$)(.*)", allow_sudo=True))
